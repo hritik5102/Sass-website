@@ -50,4 +50,17 @@ $ npm install -g scss
 ```css
 $primary-color: #ffffff;
 ```
-Rendered ui
+
+**Rendered ui**
+<div align="center">
+        <img src="./assets/Image/1.JPG">
+</div>
+
+```css
+$primary-color: #0e6cff;
+```
+
+**Rendered ui**
+<div align="center">
+        <img src="./assets/Image/2.JPG">
+</div>

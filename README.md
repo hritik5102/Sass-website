@@ -44,3 +44,10 @@ $ npm install -g scss
 * When you create **_filename.scss** it will not compiled to .css because it's partial file so,
   you can store your define variable in that file and import that file any where you required .
 * we can access or shared property of one scss file to another .
+
+**Theme** :
+
+```css
+$primary-color: #ffffff;
+```
+Rendered ui

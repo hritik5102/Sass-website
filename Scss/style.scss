@@ -1,0 +1,73 @@
+@import 'config';
+@import 'utility';
+@import 'button';
+// css
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.5;
+}
+
+.showcase {
+    background-color: $primary-color;
+    height: 600px;
+    color: set-text-color($primary-color);
+    // we don't do .showcase nav
+    // instead we directly nest nav to showcase class
+    nav {
+        // make them horizontal
+        display: flex;
+        align-items: center;
+        // make a space between logo and link 
+        justify-content: space-between;
+        ul {
+            //align horizontal 
+            display: flex;
+            // it remove a dot 
+            list-style-type: none;
+        }
+        li {
+            padding: 15px;
+        }
+        a:hover {
+            color: set-hover-color($hover-color);
+        }
+    }
+    a {
+        color: set-text-color($primary-color);
+        font-weight: 500;
+    }
+    .showcase-content {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        img {
+            width: 50%;
+        }
+        p {
+            margin: 20px 0px;
+        }
+        a:hover {
+            color: black;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 700px;
+}
+
+// contain a media query
+@import 'mobile';

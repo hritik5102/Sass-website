@@ -1,0 +1,21 @@
+%btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px; // top-bottom right-left
+    margin: 3px;
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    background-color: #ff8700;
+}
+
+.btn-secondary {
+    @extend %btn;
+    // we can also do that
+    // background-color: $primary-color;
+    background-color: rgb(106, 11, 230);
+}
